@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Patrick+Hand&display=swap');
+
+.flags {
+    margin: 1% 0 0 0;
+}
+
+#result {
+    font-size: 5vw;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.continueSubmit {
+    position: absolute;
+    margin: 50%;
+    width: 10vw;
+    height: 10vh;
+    border: 0.25vw solid#000;
+    border-radius: 8%;
+    font-size: 4vh;
+
+}
+
+:root {
+    --matrixSize: 8;
+    --fiedSize: 27vw;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    height: calc(var(--fieldSize)/var(--matrixSize))
+}
+
+.grid .cell {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(var(--fieldSize) / var(--matrixSize));
+    height: calc(var(--fieldSize) / var(--matrixSize));
+    font-size: calc(var(--fieldSize) / var(--matrixSize)*0.5);
+    background-color: #dcd6bc;
+    padding: 0;
+    margin: 0;
+    border: 0.35vw solid;
+    border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
+}
+
+#container .grid {
+    margin: 2% 0;
+    display: flex;
+    flex-direction: column;
+    width: var(--fieldSize);
+    height: var(--fieldSize);
+    background-color: #dcd6bc;
+    border: 1vw solid #dcd6bc;
+}
+
+.one {
+    color: #e76346;
+}
+
+.two {
+    color: #4199d3;
+}
+
+.three {
+    color: #57da59;
+}
+
+.four {
+    color: #bb41d3;
+}
+
+.five {
+    color: #3e5e4f;
+}
+
+.six {
+    color: #013398;
+}
+
+.seven {
+    color: #ff02c0;
+}
+
+.eight {
+    color: #e1ff00;
+}
